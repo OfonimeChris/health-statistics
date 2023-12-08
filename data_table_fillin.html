@@ -1,0 +1,95 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Health Statistics Insight</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Data</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>PatientID</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Bmi</th>
+                <th>BloodPressure</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ health }}
+            {{% for h in health %}}
+                <tr>
+                    <td>{{ h[0] }}</td>
+                    <td>{{ h[1] }}</td>
+                    <td>{{ h[2] }}</td>
+                    <td>{{ h[3] }}</td>
+                    <td>{{ h[4] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Statistics Insight</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Data</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>PatientID</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Bmi</th>
+                <th>BloodPressure</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for h in health %}
+                <tr>
+                    <td>{{ h[0] }}</td>
+                    <td>{{ h[1] }}</td>
+                    <td>{{ h[2] }}</td>
+                    <td>{{ h[3] }}</td>
+                    <td>{{ h[4] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+
